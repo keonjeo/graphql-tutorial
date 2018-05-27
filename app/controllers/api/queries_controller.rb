@@ -1,4 +1,7 @@
 class Api::QueriesController < ApplicationController
+
+  skip_before_action :verify_authenticity_token, if: Proc.new { request.format.json? }
+
   def execute
     variables = ensure_hash(params[:variables])
     query = params[:query]
