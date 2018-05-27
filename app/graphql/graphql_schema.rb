@@ -5,6 +5,6 @@ GraphqlSchema = GraphQL::Schema.define do
     require f
   end
 
-  mutation(Types::MutationType)
+  mutation(Mutations::MutationType)
   query(Types::Query)
 end

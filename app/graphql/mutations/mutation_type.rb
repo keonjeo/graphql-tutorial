@@ -1,4 +1,4 @@
-Types::MutationType = GraphQL::ObjectType.define do
+Mutations::MutationType = GraphQL::ObjectType.define do
   name "Mutation"
 
   # TODO: Remove me
