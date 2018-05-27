@@ -1,4 +1,4 @@
 GraphqlSchema = GraphQL::Schema.define do
   mutation(Types::MutationType)
-  query(Types::QueryType)
+  query(Types::Query)
 end
