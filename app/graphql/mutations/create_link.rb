@@ -13,7 +13,7 @@ Mutations::CreateLink = GraphQL::Relay::Mutation.define do
   end
  
   return_field :link do
-    type !Types::Link
+    type !Types::LinkType
     description 'Link that was successfully added to the database'
   end
  

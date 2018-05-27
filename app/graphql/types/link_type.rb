@@ -1,5 +1,5 @@
 # defines a new GraphQL type
-Types::Link = GraphQL::ObjectType.define do
+Types::LinkType = GraphQL::ObjectType.define do
   # this type is named `Link`
   name 'Link'
   
