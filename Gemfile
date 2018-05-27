@@ -41,6 +41,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.7'                ## RSpec for Rails-3+
 end
 
 group :development do
@@ -51,6 +52,15 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'graphiql-rails', '>= 1.4.10'
+end
+
+group :test do
+  gem 'fuubar', '~> 2.3'                     ## Rspec output formatting
+  gem 'database_cleaner', '~> 1.6.2'         ## Database Reset
+  gem 'shoulda-matchers', '~> 3.1'           ## Rspec Matchers
+  gem 'simplecov', '~> 0.16.1'               ## Code coverage
+  gem 'timecop', '~> 0.9.1'                  ## Time Sensitive Spec Helpers
+  gem 'factory_bot_rails', '~> 4.0'          ## Rails object test data library
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
