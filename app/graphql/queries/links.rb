@@ -4,4 +4,13 @@ Queries::Links = GraphQL::Field.define do
 
   resolve LinksResolver.new
 end
-  
+
+########### query statement ###########
+
+# query test {
+#   all_links {
+#     id
+#     url
+#     description
+#   }
+# }
